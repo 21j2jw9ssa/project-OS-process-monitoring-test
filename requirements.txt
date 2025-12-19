@@ -1,0 +1,4 @@
+psutil>=5.9
+numpy
+pytest>=7.0
+pynvml
