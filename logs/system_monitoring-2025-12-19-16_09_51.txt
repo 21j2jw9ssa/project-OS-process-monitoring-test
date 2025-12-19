@@ -1,0 +1,70 @@
+Monitored processes recorded
+at 16:09:52 on 2025-12-19
+can be seen in the following table.
+
+---------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime    | 
+---------------------------------------------------------------------
+|        612 | chrome.exe   |     0.0 % |      60.7 MB |    54 sec. | 
+|       2760 | chrome.exe   |     0.0 % |     231.2 MB | 14941 sec. | 
+|       3372 | chrome.exe   |     0.0 % |     109.1 MB |  3051 sec. | 
+|       4116 | chrome.exe   |     0.0 % |      77.1 MB |  1586 sec. | 
+|       4488 | chrome.exe   |     0.0 % |      13.2 MB | 12489 sec. | 
+|       6976 | chrome.exe   |     0.0 % |      68.1 MB |  1585 sec. | 
+|      11540 | chrome.exe   |     0.0 % |      53.7 MB | 14941 sec. | 
+|      11904 | chrome.exe   |     0.0 % |     232.6 MB | 11151 sec. | 
+|      12776 | chrome.exe   |     0.0 % |      76.6 MB |   590 sec. | 
+|      16272 | chrome.exe   |     0.0 % |     311.1 MB | 14941 sec. | 
+|      16644 | chrome.exe   |     0.0 % |     219.3 MB | 13326 sec. | 
+|      17024 | chrome.exe   |     0.0 % |      42.9 MB | 13312 sec. | 
+|      17124 | chrome.exe   |     0.0 % |     130.3 MB |   822 sec. | 
+|      17500 | chrome.exe   |     0.0 % |      22.1 MB | 12489 sec. | 
+|      17772 | chrome.exe   |     0.0 % |      38.3 MB |    10 sec. | 
+|      17932 | chrome.exe   |     0.0 % |      85.7 MB | 13321 sec. | 
+|      18832 | chrome.exe   |     0.0 % |      66.3 MB |  1585 sec. | 
+|      19480 | chrome.exe   |     0.0 % |      47.0 MB | 13321 sec. | 
+|      19888 | chrome.exe   |     0.0 % |     173.8 MB |  1591 sec. | 
+|      24004 | chrome.exe   |     0.0 % |      68.3 MB |    53 sec. | 
+|      24012 | chrome.exe   |     0.0 % |      67.7 MB |  1585 sec. | 
+|      24032 | chrome.exe   |     0.0 % |      89.2 MB |  1588 sec. | 
+|      24288 | chrome.exe   |     0.0 % |      66.8 MB |  1586 sec. | 
+|      25172 | chrome.exe   |     0.0 % |       5.2 MB | 14941 sec. | 
+|      26464 | chrome.exe   |     0.0 % |      94.5 MB | 13321 sec. | 
+|      26880 | chrome.exe   |     0.0 % |      71.1 MB |  1586 sec. | 
+|      26932 | chrome.exe   |     0.0 % |      32.9 MB | 13321 sec. | 
+|      27028 | chrome.exe   |     0.0 % |      16.6 MB | 14941 sec. | 
+|      27036 | chrome.exe   |     0.0 % |      30.3 MB |    51 sec. | 
+|      28072 | chrome.exe   |     0.0 % |      77.9 MB |  1586 sec. | 
+|      28260 | chrome.exe   |     0.0 % |     198.9 MB | 13320 sec. | 
+|      29060 | chrome.exe   |     0.0 % |     392.8 MB |   526 sec. | 
+|      29088 | chrome.exe   |     0.0 % |      76.4 MB | 14941 sec. | 
+|      29276 | chrome.exe   |     0.0 % |      72.3 MB |  1586 sec. | 
+|      29488 | chrome.exe   |     0.0 % |      65.7 MB |  1586 sec. | 
+---------------------------------------------------------------------
+
+Beware: 
+16 PROCESSES WITH RUNTIME OVER 1 HOUR DETECTED:
+---------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime    | 
+---------------------------------------------------------------------
+|       2760 | chrome.exe   |     0.0 % |     231.2 MB | 14941 sec. | 
+|       4488 | chrome.exe   |     0.0 % |      13.2 MB | 12489 sec. | 
+|      11540 | chrome.exe   |     0.0 % |      53.7 MB | 14941 sec. | 
+|      11904 | chrome.exe   |     0.0 % |     232.6 MB | 11151 sec. | 
+|      16272 | chrome.exe   |     0.0 % |     311.1 MB | 14941 sec. | 
+|      16644 | chrome.exe   |     0.0 % |     219.3 MB | 13326 sec. | 
+|      17024 | chrome.exe   |     0.0 % |      42.9 MB | 13312 sec. | 
+|      17500 | chrome.exe   |     0.0 % |      22.1 MB | 12489 sec. | 
+|      17932 | chrome.exe   |     0.0 % |      85.7 MB | 13321 sec. | 
+|      19480 | chrome.exe   |     0.0 % |      47.0 MB | 13321 sec. | 
+|      25172 | chrome.exe   |     0.0 % |       5.2 MB | 14941 sec. | 
+|      26464 | chrome.exe   |     0.0 % |      94.5 MB | 13321 sec. | 
+|      26932 | chrome.exe   |     0.0 % |      32.9 MB | 13321 sec. | 
+|      27028 | chrome.exe   |     0.0 % |      16.6 MB | 14941 sec. | 
+|      28260 | chrome.exe   |     0.0 % |     198.9 MB | 13320 sec. | 
+|      29088 | chrome.exe   |     0.0 % |      76.4 MB | 14941 sec. | 
+---------------------------------------------------------------------
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+

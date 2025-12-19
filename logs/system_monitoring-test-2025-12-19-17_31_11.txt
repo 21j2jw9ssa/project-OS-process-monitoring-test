@@ -1,0 +1,92 @@
+Total snapshots taken during the monitoring test: 4
+
+Monitored processes recorded
+at 17:31:11 on 2025-12-19
+can be seen in the following table.
+
+----------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime     | 
+----------------------------------------------------------------------
+|      14092 | OneDrive.exe |     0.0 % |     476.6 MB | 375114 sec. | 
+----------------------------------------------------------------------
+
+Beware: 
+1 PROCESS WITH RUNTIME OVER 1 HOUR DETECTED:
+----------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime     | 
+----------------------------------------------------------------------
+|      14092 | OneDrive.exe |     0.0 % |     476.6 MB | 375114 sec. | 
+----------------------------------------------------------------------
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+
+----------------------------------------------------------------------------------------------------
+
+Monitored processes recorded
+at 17:31:13 on 2025-12-19
+can be seen in the following table.
+
+----------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime     | 
+----------------------------------------------------------------------
+|      14092 | OneDrive.exe |     0.0 % |     476.6 MB | 375115 sec. | 
+----------------------------------------------------------------------
+
+Beware: 
+1 PROCESS WITH RUNTIME OVER 1 HOUR DETECTED:
+----------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime     | 
+----------------------------------------------------------------------
+|      14092 | OneDrive.exe |     0.0 % |     476.6 MB | 375115 sec. | 
+----------------------------------------------------------------------
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+
+----------------------------------------------------------------------------------------------------
+
+Monitored processes recorded
+at 17:31:14 on 2025-12-19
+can be seen in the following table.
+
+----------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime     | 
+----------------------------------------------------------------------
+|      14092 | OneDrive.exe |     0.0 % |     476.6 MB | 375117 sec. | 
+----------------------------------------------------------------------
+
+Beware: 
+1 PROCESS WITH RUNTIME OVER 1 HOUR DETECTED:
+----------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime     | 
+----------------------------------------------------------------------
+|      14092 | OneDrive.exe |     0.0 % |     476.6 MB | 375117 sec. | 
+----------------------------------------------------------------------
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+
+----------------------------------------------------------------------------------------------------
+
+Monitored processes recorded
+at 17:31:16 on 2025-12-19
+can be seen in the following table.
+
+----------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime     | 
+----------------------------------------------------------------------
+|      14092 | OneDrive.exe |     0.0 % |     476.6 MB | 375118 sec. | 
+----------------------------------------------------------------------
+
+Beware: 
+1 PROCESS WITH RUNTIME OVER 1 HOUR DETECTED:
+----------------------------------------------------------------------
+| process_id | process_name | cpu_usage | memory_usage | runtime     | 
+----------------------------------------------------------------------
+|      14092 | OneDrive.exe |     0.0 % |     476.6 MB | 375118 sec. | 
+----------------------------------------------------------------------
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+
