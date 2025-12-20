@@ -1,0 +1,108 @@
+Total snapshots taken during the monitoring test: 4
+
+Monitored processes recorded
+at 15:48:08 on 2025-12-20
+can be seen in the following table.
+
++------------+-----------------------+-----------+--------------+------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime    |
++------------+-----------------------+-----------+--------------+------------+
+|       6448 | OneDrive.exe          |     0.0 % |     455.8 MB | 17162 sec. | 
+|      13660 | SafeConnect.Entry.exe |     0.0 % |      73.9 MB | 17134 sec. | 
+|      28356 | dwm.exe               |     0.0 % |     127.1 MB | 17241 sec. | 
++------------+-----------------------+-----------+--------------+------------+
+
+Beware: 
+3 PROCESSES WITH RUNTIME OVER 1 HOUR DETECTED:
++------------+-----------------------+-----------+--------------+------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime    |
++------------+-----------------------+-----------+--------------+------------+
+|       6448 | OneDrive.exe          |     0.0 % |     455.8 MB | 17162 sec. | 
+|      13660 | SafeConnect.Entry.exe |     0.0 % |      73.9 MB | 17134 sec. | 
+|      28356 | dwm.exe               |     0.0 % |     127.1 MB | 17241 sec. | 
++------------+-----------------------+-----------+--------------+------------+
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+
+----------------------------------------------------------------------------------------------------
+
+Monitored processes recorded
+at 15:48:09 on 2025-12-20
+can be seen in the following table.
+
++------------+-----------------------+-----------+--------------+------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime    |
++------------+-----------------------+-----------+--------------+------------+
+|       6448 | OneDrive.exe          |     0.0 % |     455.8 MB | 17164 sec. | 
+|      13660 | SafeConnect.Entry.exe |     0.0 % |      73.9 MB | 17135 sec. | 
+|      28356 | dwm.exe               |     0.2 % |     127.3 MB | 17242 sec. | 
++------------+-----------------------+-----------+--------------+------------+
+
+Beware: 
+3 PROCESSES WITH RUNTIME OVER 1 HOUR DETECTED:
++------------+-----------------------+-----------+--------------+------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime    |
++------------+-----------------------+-----------+--------------+------------+
+|       6448 | OneDrive.exe          |     0.0 % |     455.8 MB | 17164 sec. | 
+|      13660 | SafeConnect.Entry.exe |     0.0 % |      73.9 MB | 17135 sec. | 
+|      28356 | dwm.exe               |     0.2 % |     127.3 MB | 17242 sec. | 
++------------+-----------------------+-----------+--------------+------------+
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+
+----------------------------------------------------------------------------------------------------
+
+Monitored processes recorded
+at 15:48:11 on 2025-12-20
+can be seen in the following table.
+
++------------+-----------------------+-----------+--------------+------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime    |
++------------+-----------------------+-----------+--------------+------------+
+|       6448 | OneDrive.exe          |     0.0 % |     455.8 MB | 17165 sec. | 
+|      13660 | SafeConnect.Entry.exe |     0.0 % |      73.9 MB | 17137 sec. | 
+|      28356 | dwm.exe               |     0.5 % |     127.2 MB | 17244 sec. | 
++------------+-----------------------+-----------+--------------+------------+
+
+Beware: 
+3 PROCESSES WITH RUNTIME OVER 1 HOUR DETECTED:
++------------+-----------------------+-----------+--------------+------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime    |
++------------+-----------------------+-----------+--------------+------------+
+|       6448 | OneDrive.exe          |     0.0 % |     455.8 MB | 17165 sec. | 
+|      13660 | SafeConnect.Entry.exe |     0.0 % |      73.9 MB | 17137 sec. | 
+|      28356 | dwm.exe               |     0.5 % |     127.2 MB | 17244 sec. | 
++------------+-----------------------+-----------+--------------+------------+
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+
+----------------------------------------------------------------------------------------------------
+
+Monitored processes recorded
+at 15:48:12 on 2025-12-20
+can be seen in the following table.
+
++------------+-----------------------+-----------+--------------+------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime    |
++------------+-----------------------+-----------+--------------+------------+
+|       6448 | OneDrive.exe          |     0.0 % |     455.8 MB | 17167 sec. | 
+|      13660 | SafeConnect.Entry.exe |     0.0 % |      73.9 MB | 17139 sec. | 
+|      28356 | dwm.exe               |     0.6 % |     127.6 MB | 17246 sec. | 
++------------+-----------------------+-----------+--------------+------------+
+
+Beware: 
+3 PROCESSES WITH RUNTIME OVER 1 HOUR DETECTED:
++------------+-----------------------+-----------+--------------+------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime    |
++------------+-----------------------+-----------+--------------+------------+
+|       6448 | OneDrive.exe          |     0.0 % |     455.8 MB | 17167 sec. | 
+|      13660 | SafeConnect.Entry.exe |     0.0 % |      73.9 MB | 17139 sec. | 
+|      28356 | dwm.exe               |     0.6 % |     127.6 MB | 17246 sec. | 
++------------+-----------------------+-----------+--------------+------------+
+Suggestion:
+Turn off unused processes to prevent them from occupying CPU and memory
+NOTE: Only close them if necessary. Turning off necessary programs may result in system failure.
+
