@@ -14,7 +14,7 @@ import time      # For CPU loading processes
 import datetime  # For issuing current date and time
 import threading
 from src.monitor import THRESHOLD_CPU, THRESHOLD_MEM, THRESHOLD_RUNTIME
-from src.monitor import SecsToMinsOrHrs, PrintAndLog, LogProcessTable, clearScreen, getSnapshot, OS_monitoring_summary
+from src.monitor import PrintAndLog, clearScreen, getSnapshot, OS_monitoring_summary
 from src.evaluator import evaluate
 from src.workload import cpu_load
 
@@ -70,12 +70,17 @@ if __name__ == "__main__":
   # Processes to monitor with specific names.
   # Only will the following processes be monitored.
   # When the following list is empty, though,
-  # every process available will be monitored all together. 
+  # every process available will be monitored all together.
+
+  # This process list will monitor all the processes shown in the following list.
+  # If not specified, all processes will be monitored.
+  # You may change the processes to monitor as needed.
   procList = [
     # "MicrosoftSecurityApp.exe",   # Microsoft security
     # "chrome.exe",                 # Chrome browser
+    "dwm.exe",                    # Desktop window manager
     "OneDrive.exe",               # OneDrive cloud
-    # "SafeConnect.Entry.exe"       # McAfee Safe Connect
+    "SafeConnect.Entry.exe"       # McAfee Safe Connect
   ] ;
 
   # Two threads (can be executed concurrently)
