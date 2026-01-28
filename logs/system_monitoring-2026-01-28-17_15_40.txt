@@ -1,0 +1,25 @@
+Monitored processes recorded at 17:15:40 on 2026-01-28
+can be seen in the following table.
+
++------------+-----------------------+-----------+--------------+-------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime     |
++------------+-----------------------+-----------+--------------+-------------+
+|       1528 | dwm.exe               |     0.0 % |      87.1 MB | 266406 sec. |
+|       3436 | OneDrive.exe          |     0.0 % |     387.4 MB | 266371 sec. |
+|      18712 | SafeConnect.Entry.exe |     0.0 % |      70.3 MB | 266341 sec. |
++------------+-----------------------+-----------+--------------+-------------+
+
+Beware: 3 PROCESSES WITH RUNTIME OVER 1 HOUR DETECTED:
++------------+-----------------------+-----------+--------------+-------------+
+| process_id | process_name          | cpu_usage | memory_usage | runtime     |
++------------+-----------------------+-----------+--------------+-------------+
+|       1528 | dwm.exe               |     0.0 % |      87.1 MB | 266406 sec. |
+|       3436 | OneDrive.exe          |     0.0 % |     387.4 MB | 266371 sec. |
+|      18712 | SafeConnect.Entry.exe |     0.0 % |      70.3 MB | 266341 sec. |
++------------+-----------------------+-----------+--------------+-------------+
+Suggestion:
+Turn off these unused processes to release CPU and memory
+resources to the other needed processes.
+NOTE: Only close them if necessary.
+Turning off indispensable programs may result in system failure.
+
