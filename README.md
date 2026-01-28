@@ -1,19 +1,23 @@
 # System Monitoring and Test Harness (Python)
 
 ## Overview
-This project was initially built as a operating-system monitoring tool written in Python.
 
-After that, I wanted to see what a testing on OS resources looks like. Hence, I extended it into a small test harness to observe how monitoring behaves when the system is under load.
+This project was initially built as an operating-system monitoring tool written in Python.
+After that, I wanted to see what a test on OS resources looks like.
+
+Hence, I extended it into a small test harness to observe how monitoring behaves when the system is under load.
 
 The goal is not to stress hardware to its limits. Instead, it is designed as a controlled, repeatable test similar to validations of long-running system software.
 
 ## Why this project?
+
 I wanted to see whether I could design a small test that runs unattended.
-Therefore, I added a test harness that runs monitoring and workload in parallel and evaluates the OS usage afterward.
+
+Therefore, I added a test harness that runs monitoring and workload in parallel and evaluates the OS usage afterwards.
 
 ## Architecture
 
-To keep the code testable and easier for reason about, I separated the system into three independent components:
+To keep the code testable and easier to reason about, I separated the system into three independent components:
 
 - `workload.py`: generates a controlled CPU workload for a given, fixed duration
 - `monitor.py`: collects snapshots of process-level CPU, memory, and runtime data
@@ -24,20 +28,22 @@ A small test runner script starts the workload and monitoring in parallel, then 
 ### How to run this program
 
 All the packages needed are listed in `requirements.txt`.
+
 The test harness uses `system_monitoring_test_runner.py` as the main entry point.
 
 That is, run the following commands in your terminal screen:
-
 ```
 pip install -r requirements.txt
 python system_monitoring_test_runner.py
 ```
+Note: `monitor.py` can also run independently to observe OS processes for a long time period.
 
-Note: `monitor.py` can also run independently to observe OS processes for a long time period. To run it, simply run the following commands in your terminal screen:
+To run it, simply run the following commands in your terminal screen:
 ```
 python ./src/monitor.py
 ```
-The `monitor.py` program can be terminated pressing `Ctrl + C`.
+
+The `monitor.py` program can be terminated by pressing `Ctrl + C`.
 
 ## Why this design
 
@@ -53,9 +59,7 @@ This is a simple design that nevertheless makes the OS monitoring behavior easie
 ## What is being tested
 
 - Whether CPU usage reported by the OS changes predictably under controlled load
-
 - Whether memory and runtime thresholds can be detected consistently
-
 - Whether monitoring continues to function correctly while the system is busy
 
 This project does not aim to model real datacenter traffic or hardware-level performance.
@@ -76,6 +80,25 @@ The same patterns apply to larger monitoring and validation systems.
 - Python
 - `psutil` for OS-level telemetry
 - **Thread-based** orchestration for concurrent workload and monitoring
+
+## Sample test screenshot
+
+One of the test demonstration can be seen below:
+
+![Alt text](結果截圖.png "The result shows a sample output of test. Six snapshots were taken, but only the first one is shown. All three processes are monitored during the time the first snapshot was taken. The program tells the user that all of them also have run for more than an hour, telling them to turn them off if necessary so as to avoid system failure.")
+
+It only represent 1st of all the 6 snapshots recorded,
+with the filtered processes, if found, having their
+
+- **CPU usage (in percentage)**
+- **memory usage (in *MB*)**
+- **runtime since start-up (in *seconds*)**
+
+listed in the sheet.
+
+The program will then show users which processes in the filtered ones
+have either of three properties above exceeding the respective thresholds,
+asking them to stop or restart them if necessary.
 
 ## Notes
 
