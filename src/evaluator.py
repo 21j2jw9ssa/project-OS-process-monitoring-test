@@ -1,5 +1,17 @@
-def evaluate(snapshot, cpu_threshold, mem_threshold, runtime_threshold):
+def evaluate(snapshot, cpu_threshold: int|float, mem_threshold: int|float, runtime_threshold: int|float ):
   """
+  :type snapshot: tuple
+  :param snapshot: identifying number of this process
+
+  :type cpu_threshold: int | float
+  :param cpu_threshold: how much CPU has been consumed by this process, in percent (%)
+
+  :type mem_threshold: int | float
+  :param mem_threshold: how much memory has been occupied by this process, in MB
+
+  :type runtime_threshold: int | float
+  :param runtime_threshold: how long has this process run since starting up
+
   Evaluate a monitoring snapshot on an operating system's resources.
   Must detect three kinds of violations:
   - excessive CPU usage
