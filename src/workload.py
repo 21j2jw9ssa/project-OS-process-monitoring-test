@@ -9,7 +9,7 @@ def cpu_load( target_cpu_percent_work=40, duration=60 ):
   interval = 0.1 # in seconds
 
   # Work time can be determined by the total interval time
-  # and how much portion of it should be spent on working
+  # and how much portion of it should be spent on work
   workTime = interval * ( target_cpu_percent_work / 100 )
 
   # To ensure the total cycle duration is stable,
