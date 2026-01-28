@@ -13,7 +13,6 @@ validate telemetry under load.
 import time      # For CPU loading processes
 import datetime  # For issuing current date and time
 import threading
-from src.monitor import THRESHOLD_CPU, THRESHOLD_MEM, THRESHOLD_RUNTIME
 from src.monitor import PrintAndLog, clearScreen, getSnapshot, OS_monitoring_summary
 from src.evaluator import evaluate
 from src.workload import cpu_load
@@ -38,30 +37,35 @@ def monitor_loop(duration, procList):
     snapshots.append( getSnapshot(now, procList) )
     time.sleep(1)
 
-# duration in seconds
-DURATION = 5
+def print_monitor_test_result(all_results):
+  LOG_TEST_FILE = datetime.datetime.now().strftime( "system_monitoring-test-%Y-%m-%d-%H_%M_%S.txt" )
 
-# How much of an interval to spent on work for CPU load, in percent (%)
-WORK_PERCENTAGE = 70
-
-# log file name for tests 
-LOG_TEST_FILE = datetime.datetime.now().strftime( "system_monitoring-test-%Y-%m-%d-%H_%M_%S.txt" )
-
-def print_monitor_test_result(file :str):
-  PrintAndLog( f"Total snapshots taken during the monitoring test: { len(all_results) }\n", file=file )
+  resultCtnt = f"Total snapshots taken during the monitoring test: { len(all_results) }\n\n"
 
   for i in range( len(all_results) ):
-
     cpuExceed = all_results[i]["cpu_violations"]
     memExceed = all_results[i]["mem_violations"]
     runExceed = all_results[i]["runtime_violations"]
-    
-    OS_monitoring_summary( times_snapshots[i], snapshots[i], cpuExceed, memExceed, runExceed, LOG_TEST_FILE ) ;
+
+    resultCtnt += OS_monitoring_summary(
+      times_snapshots[i], snapshots[i],
+      cpuExceed, memExceed, runExceed
+    ) ;
 
     if i + 1 < len(all_results):
-      PrintAndLog( "-" * 100, end="\n\n", file=file )
+      resultCtnt += '\n' + "-" * 120 + "\n\n"
+
+  PrintAndLog(resultCtnt, file=LOG_TEST_FILE)
 
 if __name__ == "__main__":
+  clearScreen()
+
+  # duration spent in testing; in seconds
+  DURATION = 10
+
+  # How much of an interval to spent on work for CPU load, in percent (%)
+  WORK_PERCENTAGE = 70
+
   print( "This test will monitor the resources in the operating system.\n" )
   print( f"It will last about {DURATION} { "second" if DURATION == 1 else "seconds" },", end="\n" )
   print( f"with {WORK_PERCENTAGE}% of the time spent on CPU loading.\n")
@@ -85,7 +89,7 @@ if __name__ == "__main__":
 
   # Two threads (can be executed concurrently)
   thread_monitorSysProcs = threading.Thread( target=monitor_loop, args=( DURATION, procList ) )
-  thread_loads_of_CPU = threading.Thread( target=cpu_load, args=(WORK_PERCENTAGE, DURATION) )
+  thread_loads_of_CPU = threading.Thread( target=cpu_load, args=( WORK_PERCENTAGE, DURATION ) )
 
   thread_monitorSysProcs.start()
   thread_loads_of_CPU.start()
@@ -94,11 +98,15 @@ if __name__ == "__main__":
   thread_loads_of_CPU.join()
 
   # Evaluation phase (no side effects)
-  all_results = [
-    evaluate( s, THRESHOLD_CPU, THRESHOLD_MEM, THRESHOLD_RUNTIME )
-    for s in snapshots
-  ]
+  all_results = []
+
+  for s in snapshots:
+    # Threshold setup:
+    # CPU usage: 70%
+    # memory usage: 500MB
+    # running time: 3600 seconds since started
+    all_results.append( evaluate( s, 70, 500, 3600 ) )
 
   clearScreen()
-  print_monitor_test_result( LOG_TEST_FILE )
+  print_monitor_test_result(all_results)
   print( f"Test completed." )
